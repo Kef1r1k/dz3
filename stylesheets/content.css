@@ -1,0 +1,43 @@
+.ball{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  left:49%;
+  top: 200px;
+  animation: a1 3s linear infinite;
+}
+@keyframes a1 {
+  0%{transform: scale(1);}
+  50%{transform: scale(0.3);}
+  100%{transform: scale(1);}
+}
+
+#click:checked ~ .ball{
+    background-color: red;
+    animation: a2 1s linear infinite;
+}
+@keyframes a2 {
+  0%{transform: scaleX(1);}
+  25%{transform: scaleX(0.3);}
+  50%{transform: scaleX(1);}
+  75%{transform: scaleY(0.3);}
+  100%{transform: scaleY(1);}
+}
+label {
+    background-color: pink;
+    border-radius: 30px;
+    padding: 10px 50px;
+    position: relative;
+    left:47%;
+    top: 150px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
